@@ -1,0 +1,45 @@
+add_newline = false
+
+format = '$username$hostname$directory$git_branch$git_status$character'
+right_format = '$c$direnv$haskell$bun$python$rust'
+
+[username]
+style_user = 'blue'
+style_root = 'red'
+format = '[$user]($style)'
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '[@$hostname]($style) '
+style = 'blue'
+
+[directory]
+style = 'cyan'
+format = '[$path]($style) '
+truncation_length = 0
+truncate_to_repo = false
+
+[git_branch]
+style = 'purple'
+
+[git_status]
+format = '$conflicted$stashed$deleted$renamed$modified$staged$untracked$ahead_behind'
+conflicted = '[=$count](red) '
+ahead = '[⇡$count](cyan) '
+behind = '[⇣$count](cyan) '
+diverged = '[⇡$ahead_count](cyan)[⇣$behind_count](cyan) '
+untracked = '[?$count](yellow) '
+stashed = '[\$$count](cyan) '
+modified = '[!$count](yellow) '
+staged = '[+$count](green) '
+renamed = '[»$count](cyan) '
+deleted = '[✘$count](red) '
+
+[character]
+success_symbol = '[♥](red)'
+error_symbol = '[♥](red)'
+vimcmd_symbol = '[♥](blue)'
+
+[direnv]
+disabled = false

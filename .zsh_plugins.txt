@@ -1,0 +1,10 @@
+# zsh community projects
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+
+# misc
+Aloxaf/fzf-tab
+jeffreytse/zsh-vi-mode
+
+# vim: set ft=sh:
