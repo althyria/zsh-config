@@ -12,9 +12,6 @@ antidote load
 # enable zsh completions
 autoload -Uz compinit && compinit
 
-# setup our path
-export PATH="$HOME/.local/bin:$PATH"
-
 # History
 HISTFILE=$ZDOTDIR/.zsh_history
 HISTSIZE=20000
@@ -47,7 +44,6 @@ alias gn="xset dpms force off"
 alias lal="ls -la"
 
 # misc aliases
-alias please="sudo"
 alias mkdir="mkdir -p"
 alias rmdl="rm -rvf ~/Downloads/*"
 
