@@ -32,20 +32,12 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 alias c="clear"
 
 # double letter aliases
-alias vi="nvim"
 alias ls="ls --color=auto"
 alias la="ls -a"
 alias ll="ls -l"
-alias tp="trash-put"
-alias wl="wezterm cli list"
-alias gn="xset dpms force off"
 
 # triple letter aliases
 alias lal="ls -la"
-
-# misc aliases
-alias mkdir="mkdir -p"
-alias rmdl="rm -rvf ~/Downloads/*"
 
 # only run in wezterm terminal emulator
 if [[ -n "$WEZTERM_PANE" ]]; then
@@ -66,5 +58,4 @@ fi
 
 # starship init script
 eval "$(starship init zsh)"
-
 
